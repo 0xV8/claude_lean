@@ -1,0 +1,2 @@
+- Always use all agents
+- Don't add credit attribution in commits

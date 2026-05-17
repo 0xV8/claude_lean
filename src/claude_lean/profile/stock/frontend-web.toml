@@ -1,0 +1,43 @@
+schema_version = 1
+name = "frontend-web"
+display_name = "Frontend Web"
+description = "React/Vue/Svelte + TypeScript frontend work with browser automation."
+version = "1.0.0"
+target_stack = ["javascript", "typescript", "react", "vite", "tailwind"]
+
+[plugins.enabled]
+plugins = [
+  "engineering-skills",
+  "engineering-advanced-skills",
+  "superpowers",
+  "context7",
+  "github",
+  "code-review",
+  "feature-dev",
+  "code-simplifier",
+  "frontend-design",
+  "playwright",
+  "self-improving-agent",
+]
+
+[plugins.disabled]
+plugins = [
+  "marketing-skills",
+  "c-level-skills",
+  "ra-qm-skills",
+  "business-growth-skills",
+  "finance-skills",
+  "pm-skills",
+  "content-creator",
+  "product-skills",
+]
+
+[claude_md]
+mode = "replace"
+content = """
+- Use TypeScript over JavaScript when both options exist
+- Prefer composable components; avoid prop-drilling beyond two levels
+- Use semantic HTML; ARIA only when semantic HTML is insufficient
+- Use agents when work is specialized or parallelizable, not for simple edits
+- Don't add credit attribution in commits, releases, or code
+"""

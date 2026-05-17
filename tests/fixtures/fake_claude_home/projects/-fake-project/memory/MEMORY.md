@@ -1,0 +1,3 @@
+- [Good memory](good_memory.md) — Detailed description over sixty chars long for retrieval purposes
+- [Vague memory](vague_memory.md) — notes
+- [Stale memory](stale_memory.md) — Contains snapshot state from a fixed date in the past for stale-detection tests

@@ -1,0 +1,43 @@
+schema_version = 1
+name = "python-ml"
+display_name = "Python ML / AI"
+description = "Python ML/AI work on macOS, MLX-first, stdlib-heavy."
+version = "1.0.0"
+target_stack = ["python", "mlx", "pytorch", "huggingface", "macos"]
+
+[plugins.enabled]
+plugins = [
+  "engineering-skills",
+  "engineering-advanced-skills",
+  "superpowers",
+  "context7",
+  "github",
+  "code-review",
+  "feature-dev",
+  "code-simplifier",
+  "self-improving-agent",
+]
+
+[plugins.disabled]
+plugins = [
+  "marketing-skills",
+  "c-level-skills",
+  "ra-qm-skills",
+  "business-growth-skills",
+  "finance-skills",
+  "pm-skills",
+  "content-creator",
+  "frontend-design",
+  "playwright",
+  "product-skills",
+]
+
+[claude_md]
+mode = "replace"
+content = """
+- Default to Python 3.14 unless a project requires older
+- Prefer MLX over PyTorch for local ML on Apple Silicon when possible
+- Use stdlib-only when reasonable; minimize external deps
+- Use agents when work is specialized or parallelizable, not for simple edits
+- Don't add credit attribution in commits, releases, or code
+"""

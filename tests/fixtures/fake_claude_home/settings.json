@@ -1,0 +1,8 @@
+{
+  "enabledPlugins": {
+    "engineering-skills@sample-marketplace": true,
+    "marketing-skills@sample-marketplace": true,
+    "ra-qm-skills@sample-marketplace": false
+  },
+  "theme": "dark"
+}

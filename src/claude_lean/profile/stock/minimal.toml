@@ -1,0 +1,40 @@
+schema_version = 1
+name = "minimal"
+display_name = "Minimal Engineering"
+description = "Tightest engineering profile: core deps only, no specialized packs."
+version = "1.0.0"
+target_stack = ["any"]
+
+[plugins.enabled]
+plugins = [
+  "engineering-skills",
+  "superpowers",
+  "context7",
+  "github",
+  "code-review",
+]
+
+[plugins.disabled]
+plugins = [
+  "marketing-skills",
+  "c-level-skills",
+  "ra-qm-skills",
+  "business-growth-skills",
+  "finance-skills",
+  "pm-skills",
+  "content-creator",
+  "frontend-design",
+  "playwright",
+  "product-skills",
+  "engineering-advanced-skills",
+  "feature-dev",
+  "code-simplifier",
+  "self-improving-agent",
+]
+
+[claude_md]
+mode = "replace"
+content = """
+- Use agents only when work is specialized or genuinely parallelizable
+- Don't add credit attribution in commits, releases, or code
+"""
